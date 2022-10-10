@@ -1,23 +1,23 @@
-const Stats=require('./stats');
-const Imagen=require('./images');
-const Comments=require('./comments');
+//const Stats=require('./stats');
+//const Imagen=require('./images');
+//const Comments=require('./comments');
 
 
-module.exports= async viewModel=>{
+//module.exports= async viewModel=>{
     
-    const results= await Promise.all([
-        Stats(),
-        Imagen.popular(),
-        Comments.newest(),
+  //  const results= await Promise.all([
+    //    Stats(),
+      //  Imagen.popular(),
+        //Comments.newest(),
             
-    ]);
-    viewModel.sidebar={
-        stats: results[0],
-        popular:results[1],
-        comments:results[2],
+    //]);
+    //viewModel.sidebar={
+      //  stats: results[0],
+        //popular:results[1],
+        //comments:results[2],
         
-    };
-    return viewModel;
-}
+    //};
+    //return viewModel;
+//}
 
 
