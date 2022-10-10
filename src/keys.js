@@ -2,6 +2,6 @@ module.exports={
 
     database:{
         //URI:'mongodb://localhost/mundoviral'
-        URI:'mongodb+srv://lordbyron1481:Bayron81071411664@cluster0.cisorbb.mongodb.net/test'
+        URI:'mongodb+srv://lordbyron1481:Bayron810714@cluster0.cisorbb.mongodb.net/test'
     }
 };
