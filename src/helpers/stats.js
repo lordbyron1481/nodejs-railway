@@ -17,13 +17,13 @@ async function imageTotalViewsCounter(){
     return result[0].viewsTotal;
 }
 
-async function likesTotalCounter(){
-    const result=await Image.aggregate([{$group: {
-        _id: '1',
-        likesTotal: {$sum:  '$likes'}
-    }}]);
-    return result[0].likesTotal;
-}
+//async function likesTotalCounter(){
+  //  const result=await Image.aggregate([{$group: {
+    //    _id: '1',
+      //  likesTotal: {$sum:  '$likes'}
+    //}}]);
+    //return result[0].likesTotal;
+//}
 
 module.exports = async () =>{
 
