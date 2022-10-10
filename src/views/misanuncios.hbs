@@ -1,0 +1,37 @@
+<div class="card border-info mt-2 col-md-9">
+    <div class="card-header bg-light text-black">
+        <p class="fonttitle"><i class="fa-solid fa-fire"></i> Mis anuncios</p>
+    </div>
+    <div class="card-body">
+        <div class="row">
+           {{#each filtroemail}}   
+            <div class="col-md-4">
+                <div class="card-body hover-zoomin">
+                    <a href="/images/{{uniqueId}}">
+                        <img src="/public/upload/{{filename}}" alt="" class="w-100 h-100 rounded">
+                    </a>
+                    <div class="bg-light text-dark fontnav">
+                         {{name}}, {{ciudad}}
+                        <br>Likes: {{likes}}
+                    </div>
+                </div>
+                        
+            </div>  
+           
+            {{/each}}
+        
+        </div>
+        
+
+       
+    </div>
+
+</div>
+
+
+
+
+
+
+
+

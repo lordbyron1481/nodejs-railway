@@ -1,0 +1,97 @@
+
+
+<div id="carouselExampleCaptions" class="carousel slide mt-2" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/public/img/dogcat.jpg" class="d-block w-100 img-fluid rounded" alt="...">
+      <div class="carousel-caption text-start fs-1">
+        <h1 class="textotitulo"><center>Comprometidos con el bienestar animal</h1></center>
+      </div>
+      <div class="carousel-captiondos text-start fs-1">
+        <h1 class="textotitulodos"><center>Adopción de Mascotas</h1></center>
+      </div>
+      <div class="carousel-captiontres text-start fs-1">
+        <h1 class="textotitulodos"><center>Mascotas Extraviadas</h1></center>
+      </div>
+      <div class="carousel-captioncuatro text-start fs-1">
+        <h1 class="textotitulodos"><center>Comparte fotos de tus mascotas</h1></center>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+
+
+
+
+
+<div class="card mt-4">
+   <div class="card-header bg-light text-black"> 
+        <p class="fontnav">Filtrar por ciudad </p>
+    <form action="/filtrado/" method="POST" enctype="multipart/form-data">
+        <div class="col-md-3">  
+                <select class="form-control mb-1" width:"100px" name="filtrociudad" >
+                    <option>Armenia</option>
+                    <option>Barranquilla</option>
+                    <option>Bogota</option>
+                    <option>Bucaramanga</option>
+                    <option>Cali</option>
+                    <option>Cartagena</option>
+                    <option>Cucuta</option>
+                    <option>Manizales</option>                            
+                    <option>Medellin</option>
+                    <option>Monteria</option>
+                    <option>Pasto</option>
+                    <option>Pereira</option>
+                    <option>Santa marta</option>              
+                    <option>Sincelejo</option>
+                </select>
+            
+            
+                <button type="submit" class="btn btn-primary" id="btn-filtro"> Filtrar
+                </button>
+            
+        </div>
+    </form>
+   </div> 
+</div>                            
+        
+
+    
+
+<div class="card mt-4">
+    <div class="card-header bg-light text-black">
+        <p class="fonttitle"> <i class="far fa-images"></i> Galeria de Mascotas:</p>
+    </div>
+    <div class="card-body">
+        <div class="row">
+           {{#each images}}  
+            <div class="col-md-3">
+                <div class="card-body hover-zoomin">
+                    <a href="/images/{{uniqueId}}">
+                        <img src="/public/upload/{{filename}}" alt="" class="w-100 h-100 rounded">
+                    </a>
+                    <div class="bg-light text-dark fontnav">
+                        {{name}}, {{ciudad}} [{{tipo}}]        
+                    </div>       
+                    
+                </div>
+                
+            </div>  
+           
+            {{/each}}
+        
+        </div>
+        
+
+       
+    </div>
+
+</div>
+
+
+
+   
+

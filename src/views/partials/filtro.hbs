@@ -1,0 +1,23 @@
+<div class="card mb-2">
+    <div class="card-header bg-secondary text-white">
+        <h5><i class="fa-solid fa-hippo"></i> Filtrar por ciudad</h5>
+    </div>
+    <div class="card-body">
+        <div class="form-group col-xs-3">
+
+            <form action="/filtrado/" method="POST" enctype="multipart/form-data">
+               <select class="form-control mb-1" width:"100px" name="filtrociudad" >
+                    <option>Cartagena</option>
+                    <option>Barranquilla</option>
+                    <option>Bogota</option>
+                    <option>Medellin</option>
+                    <option>Cali</option>
+                </select>
+                <button type="submit" class="btn btn-success" id="btn-filtro">
+                    <i class=""></i> Filtrar
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>

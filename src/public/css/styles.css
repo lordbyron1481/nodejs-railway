@@ -1,0 +1,165 @@
+
+
+.navbar-brand img{
+    width: 20%;
+}
+
+.hover-zoomin img{
+    
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.hover-zoomin:hover img {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.fontnav {
+    font-family: "Bradley Hand", cursive;
+    font-size:large;
+    font-weight: bold;
+}
+
+.fonttitle {
+    font-family: "Bradley Hand", cursive;
+    font-size:x-large;
+    font-weight: bold;
+    color: #000080;
+}
+
+.fontcomment {
+    font-family: "Bradley Hand", cursive;
+    font-size:large;
+    
+    color: #5DADE2;
+}
+
+.imgindex{
+    width: 100%;
+    height: 600px;
+    display: flex;
+   
+}
+
+
+
+.textotitulo {
+    font-family:"Bradley Hand";
+    font-size:4vw;
+    color:white;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    width: 100%;
+}
+
+.textotitulodos {
+    position: absolute;
+    font-family:"Bradley Hand";
+    font-size:3vw;
+    color:rgb(49, 1, 1);
+    text-shadow: 1px 1px 2px black;
+    
+
+}
+
+
+.textotitulotres {
+    position: absolute;
+    font-family:"Bradley Hand";
+    font-size:3vw;
+    color:rgb(49, 1, 1);
+    text-shadow: 1px 1px 2px black;
+    
+    
+}
+
+.textotitulocuatro {
+    position: absolute;
+    font-family:"Bradley Hand";
+    font-size:3vw;
+    color:rgb(49, 1, 1);
+    text-shadow: 1px 1px 2px black;
+    
+    
+}
+
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    max-width: 540px;
+
+}
+
+.carousel-caption{
+
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 12%;
+    
+    color: white;
+    text-align: center;
+    display: flex;
+    width: 100%;
+   
+    font-family: "Bradley Hand";    
+}
+
+.carousel-captiondos{
+
+    position: absolute;
+    top: 70%;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 10%;
+    
+    color: white;
+    text-align: center;
+    display: flex;
+    width: 100%;
+   
+    font-family: "Bradley Hand";    
+}
+
+.carousel-captiontres{
+
+    position: absolute;
+    top: 80%;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 10%;
+    
+    color: white;
+    text-align: center;
+    display: flex;
+    width: 100%;
+   
+    font-family: "Bradley Hand";    
+}
+
+
+.carousel-captioncuatro{
+
+    position: absolute;
+    top: 90%;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 10%;
+    
+    color: white;
+    text-align: center;
+    display: flex;
+    width: 100%;
+   
+    font-family: "Bradley Hand";    
+}

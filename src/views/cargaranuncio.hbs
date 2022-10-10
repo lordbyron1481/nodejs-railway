@@ -1,0 +1,74 @@
+<div class="card border-info col-md-9 mx-auto mt-4">
+    <div class="card-header bg-white">
+        <h3 class="card-title text-black">
+            <i class="fa-solid fa-dog"> </i> 
+            <i class="fa-solid fa-cat"> </i><p class="fonttitle">Cargar Anuncio de la mascota</p> 
+        </h3>
+
+    </div>
+    <div class="card-body">
+        <form action="/images" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="inputGroup" class="fontnav">Subir Imagen</label>
+                <input type="file" name="image" class="form-control" id="inputGroup" aria-describedby="basic-addon3" required>
+            </div>          
+            <div class="row">
+                <input type="text" name="email" id="emailmascota" class="form-control" value={{#each usuario}}{{email}}{{/each}} hidden>
+                <input type="text" name="nameuser" id="nameuser" class="form-control" value={{#each usuario}}{{name}}{{/each}} hidden>
+                <div class="form-group col-md-4">
+                    <label for="nombremascota" class="fontnav">Nombre de la mascota</label>
+                    <input type="text" name="name" id="nombremascota" class="form-control" placeholder="Coloque Nombre" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="razamascota" class="fontnav">Raza de la mascota</label>
+                    <input type="text" name="raza" id="razamascota" class="form-control" placeholder="Coloque Raza" required>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="exampleFormControlSelect1" class="fontnav">Seleccionar Ciudad:</label>
+                        <select class="form-control" name="ciudad">
+                            <option>Armenia</option>
+                            <option>Barranquilla</option>
+                            <option>Bogota</option>
+                            <option>Bucaramanga</option>
+                            <option>Cali</option>
+                            <option>Cartagena</option>
+                            <option>Cucuta</option>
+                            <option>Manizales</option>                            
+                            <option>Medellin</option>
+                            <option>Monteria</option>
+                            <option>Pasto</option>
+                            <option>Pereira</option>
+                            <option>Santa marta</option>              
+                            <option>Sincelejo</option>
+                        </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="exampleFormControlSelect1" class="fontnav">Tipo de anuncio:</label>
+                        <select class="form-control" name="tipo">
+                            <option>Adopción</option>
+                            <option>Mascota Extraviada</option>
+                            <option>Ayuda para un animal</option>
+                            <option>Comparte una foto de tu mascota</option>
+                        </select>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="describemascota" class="fontnav">Detalles del anuncio</label>
+                    <textarea name="descripcion" id="describemascota" class="form-control" rows="2" placeholder="" required></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="contacto" class="fontnav">Como podemos contactarte?</label>
+                    <textarea name="contacto" id="contacto" class="form-control" rows="2" placeholder="" required></textarea>
+                </div>
+                <div class="form-group col-md-6">
+                    <br></br>
+                    <button class="btn btn-primary">
+                        <i class="fa fa-upload"></i> Cargar Informacion
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

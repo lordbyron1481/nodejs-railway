@@ -1,0 +1,47 @@
+<div class="card border-info mt-2 col-md-9">
+    <div class="card-header bg-light text-black">
+        <h3><i class="fa-solid fa-fire"></i> Mascotas en Adopción</h3>
+    </div>
+    <div class="card-body">
+        <div class="row">
+           {{#each filtros}}   
+            <div class="col-md-4">
+                <div class="card-body hover-zoomin">
+                    <a href="/images/{{uniqueId}}">
+                        <img src="/public/upload/{{filename}}" alt="" class="w-100 h-100 rounded">
+                    </a>
+                   {{name}}, {{ciudad}}
+                    <br>Likes: {{likes}}
+                    
+                </div>
+                        
+            </div>  
+           
+            {{/each}}
+        
+        </div>
+        
+
+       
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
