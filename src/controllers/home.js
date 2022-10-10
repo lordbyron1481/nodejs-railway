@@ -17,7 +17,7 @@ ctrl.index = async (req, res)=>{
    /*const filtros = await Image.find({ciudad:'Cartagena'}).lean();*/
    let viewModel={images: []};
    viewModel.images=images;
-   viewModel=await sidebar(viewModel);
+   //viewModel=await sidebar(viewModel);
    res.render('index', viewModel);
 };
 
@@ -26,7 +26,7 @@ ctrl.indexcargar = async(req, res)=>{
    
    let viewModel={images: []};
    viewModel.images=images;
-   viewModel=await sidebar(viewModel);
+   //viewModel=await sidebar(viewModel);
    res.render('cargaranuncio', viewModel);
 };
 
@@ -38,7 +38,7 @@ ctrl.ingresar = async (req, res)=>{
    viewModel.images=images;
    /*viewModel.filtros=filtros;*/
    
-   viewModel=await sidebar(viewModel);
+   //viewModel=await sidebar(viewModel);
    //console.log(images);
    
    res.render('signin', viewModel);
@@ -52,7 +52,7 @@ ctrl.registrar = async (req, res)=>{
    viewModel.images=images;
    /*viewModel.filtros=filtros;*/
    
-   viewModel=await sidebar(viewModel);
+   //viewModel=await sidebar(viewModel);
    //console.log(images);
    
    res.render('signup', viewModel);
@@ -78,7 +78,7 @@ ctrl.registrardos = async (req, res)=>{
    viewModel.images=images;
    
    
-   viewModel=await sidebar(viewModel);
+   //viewModel=await sidebar(viewModel);
    const {name, email, password, cpassword}=req.body;
    const errors=[];
    if (name.length<=0){
