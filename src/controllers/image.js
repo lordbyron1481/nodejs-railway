@@ -120,7 +120,7 @@ ctrl.remove=async(req, res)=>{
    // const {name, email, password, cpassword}=req.body;
    
     const image= await Image.findOne({filename: {$regex: req.params.image_id}});
-    /*
+    
     if(image){
         if(image.email==req.user.email) {  
         
@@ -143,7 +143,7 @@ ctrl.remove=async(req, res)=>{
             //res.redirect('/');
             //req.flash('error_eliminar', 'NO se puede');
     }        
-      */  
+       
 
     
 };
