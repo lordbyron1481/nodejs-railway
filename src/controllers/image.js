@@ -124,7 +124,7 @@ ctrl.remove=async(req, res)=>{
     if(image){
         if(image.email==req.user.email) {  
         
-            await fs.unlink(path.resolve('./src/public/upload/'+image.filename));
+            //await fs.unlink(path.resolve('./src/public/upload/'+image.filename));
             await Comment.deleteOne({image_id: image._id});
             await image.remove();
             res.json(true);
