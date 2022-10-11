@@ -5,7 +5,7 @@ const fs=require('fs-extra');
 const mongooseLeanVirtuals = require('mongoose-lean-virtuals');
 const User=require('../models/users');
 const {Image, Comment}=require('../models/');
-const sidebar=require('../helpers/sidebar');
+//const sidebar=require('../helpers/sidebar');
 const { json } = require('express');
 const users = require('../models/users');
 const usuario=require('../server/config');
@@ -28,7 +28,7 @@ ctrl.index=async(req, res)=>{
         await imagedos.save();
         const comments= await Comment.find({image_id:image._id}).lean({virtuals:true});
         viewModel.comments=comments;
-        viewModel=await sidebar(viewModel);
+        //viewModel=await sidebar(viewModel);
         /*console.log(sidebar.popular);*/
         //console.log(viewModel);
         
@@ -159,7 +159,7 @@ ctrl.filtro=async(req, res)=>{
     const filtros = await Image.find({ciudad:filtrociudad}).lean({virtuals:true});
     let viewModel={filtros: []};
     viewModel.filtros=filtros;
-    viewModel=await sidebar(viewModel);
+    //viewModel=await sidebar(viewModel);
     
     //res.json({likes: filtros.likes});
     res.render('filtrado', viewModel);
@@ -196,7 +196,7 @@ ctrl.misanuncios=async(req, res)=>{
     
     let viewModel={filtroemail: []};
     viewModel.filtroemail=filtroemail;
-    viewModel=await sidebar(viewModel);
+    //viewModel=await sidebar(viewModel);
     console.log(req.user.password);
     //res.json({likes: filtros.likes});
     res.render('misanuncios', viewModel);
