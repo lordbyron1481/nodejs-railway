@@ -142,8 +142,9 @@ ctrl.remove=async(req, res)=>{
             //await req.flash('error_eliminar','No se puede');
             //res.redirect('/');
             //req.flash('error_eliminar', 'NO se puede');
+    }        
       */  
-    }
+
     
 };
 
